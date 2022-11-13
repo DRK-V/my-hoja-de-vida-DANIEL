@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css?family=poppins:200,300,400,500,600,700,800,900display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins' sans-serif;
+}
+body
+{
+    background-image: url(../imagenes/fondo.jpg);
+    background-size: 100vw 100vh;
+   background-attachment: fixed;
+   margin: 0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container
+{
+    
+    width: 100%;
+    max-width: 1000px;
+    min-height: 100px;
+    margin: px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+}
+.container .left_side
+{
+    padding: 40px;
+}
+.profiletext
+{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding bottom:20px ;
+}
+.profiletext h2
+{
+    color: black;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+.profiletext .imgBx
+{
+
+width: 150px;
+height: 150px;
+border-radius: 50px;
+overflow: hidden;
+}
+.profiletext .imgBx img
+{
+    
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container .right_side
+{
+    padding: 40px;
+}
+/*barra de navegacon*/
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+nav{
+    height: 80px;
+    width: 100%;
+}
+.enlace{
+    position: absolute;
+    padding: 20px 50px;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+    color: black;
+ }
+ nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+ }
+ nav ul li a{
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+ }
+ li a.active, li a:hover{
+    background: #ff0000;
+    transition: .5s;
+ }
+ .checkbtn{
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+ }
+ #check{
+    display: none;
+ }
+@media (max-width: 952px){
+    .enlace{
+        padding-left: 20px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+@media (max-width: 800px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-image: url(../imagenes/po.jpg);
+        background-size: 100vw 100vh;
+        top: 20px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+ nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+ }
+ nav ul li a{
+    font-size: 20px;
+ }
+ li a:hover, li a.active{
+    background: none;
+    color: aqua;
+ }
+ #check:checked ~ ul{
+    left: 0;
+ }
+}
+/*fin barra de navegacion*/
+.buttons {
+    min-width: 40px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .buttons a {
+    text-decoration: none;
+    font-size: 24px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background: #314652;
+    color: #f1f1f1;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    transition: all .4s ease-in-out;
+  }
+  .buttons a:hover {
+    transform: scale(1.2);
+  }
+  .img-2
+  {
+    height: 300px;
+    margin: 0 0 0 70px;
+    border-radius: 25px;
+  }
+  form{
+    width: 450px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+  }
+  input, textarea
+  {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+  }
+textarea
+{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+#botton
+{
+    background: #314652;
+    color: #ffffff;
+    padding: 20px;
+}
+  #botton:hover
+  {
+    cursor: pointer;
+  }
+  @media (max-width:400px)
+  {
+    form{
+        width: 100%;
+    }
+   
+  }
+  @media (max-width: 1000px)
+{
+    .container
+    {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .img-2
+    {
+      
+        width: 200px;
+        height: 200px;
+        display: block;
+        margin: auto;
+        border-radius: 25px;
+    }
+}
+

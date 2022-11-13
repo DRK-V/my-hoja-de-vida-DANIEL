@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css?family=poppins:200,300,400,500,600,700,800,900display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins' sans-serif;
+}
+body
+{
+    background-image: url(../imagenes/fondo.jpg);
+    background-size: 100vw 100vh;
+   background-attachment: fixed;
+   margin: 0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container
+{
+   
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+}
+.container .left_side
+{
+    padding: 40px; 
+}
+.profiletext
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20PX;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+.profiletext .imgBx
+{
+width: 150px;
+height: 150px;
+border-radius: 50px;
+overflow: hidden;
+}
+.profiletext .imgBx img
+{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profiletext h2
+{
+    color: rgb(0, 0, 0);
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+.profiletext h2 span
+{
+    font-size: 0.8em;
+    font-weight: 300;
+}
+/*barra de redes sociales*/
+.buttons {
+    min-width: 40px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .buttons a {
+    text-decoration: none;
+    font-size: 24px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background: #314652;
+    color: #ffffff;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    transition: all .4s ease-in-out;
+  }
+  
+  .buttons a:hover {
+    transform: scale(1.2);
+  }
+
+
+div.galeria{
+    margin: 8px 18px;
+    box-shadow: 0 2px 4px 0 lightskyblue, 0 2px 10px 0 rgba(255, 255, 255, 0.19);
+    float: left;
+    width: 150px;
+    }
+div.galeria img{
+    width: 100%;
+    height: auto;
+}
+div.galeria:hover{
+    border: 1px solid lightcoral;
+    transform: rotate(-3deg);
+}
+div.pie{
+    text-align: center;
+    padding: 8px;
+}
+/*fin barra de redes sociales*/
+
+.contactInfo
+{
+    padding-top: 40px;
+}
+.contactInfo ul
+{
+    padding-top: 0;
+}
+.contactInfo ul li
+{
+    
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.contactInfo ul li .icon
+{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+}
+.contactInfo ul li span
+{
+    color: rgb(0, 0, 0);
+    font-weight: 300;
+   
+}
+/*barra de navegacion*/
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+nav{
+    height: 80px;
+    width: 100%;
+}
+.enlace{
+    position: absolute;
+    padding: 20px 50px;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+    color: rgb(0, 0, 0);
+ }
+ nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+ }
+ nav ul li a{
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+ }
+ li a.active, li a:hover{
+    background: #ff0000;
+    transition: .5s;
+ }
+ .checkbtn{
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+ }
+ #check{
+    display: none;
+ }
+@media (max-width: 952px){
+    .enlace{
+        padding-left: 20px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+@media (max-width: 800px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-image: url(../imagenes/po.jpg);
+        background-size: 100vw 100vh;
+        top: 20px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+ nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+ }
+ nav ul li a{
+    font-size: 20px;
+ }
+ li a:hover, li a.active{
+    background: none;
+    color: aqua;
+ }
+ #check:checked ~ ul{
+    left: 0;
+ }
+}
+/*fin barra de navegacion*/
+.container .right_side
+{
+    position: relative;
+    
+    padding: 40px;
+}
+.about
+{
+    margin-bottom: 50px;
+}
+
+.about:last-child
+{
+    margin-bottom: 0;
+}
+.title2
+{
+    color: #000000;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+p
+{
+    color: #000000;
+    font-size: 20px;
+}
+div.galeria{
+    margin: 8px 18px;
+    box-shadow: 0 2px 4px 0 lightskyblue, 0 2px 10px 0 rgba(0,0,0,0.19);
+    float: left;
+    width: 150px;
+    }
+div.galeria img{
+    width: 100%;
+    height: auto;
+}
+div.galeria:hover{
+    border: 1px solid lightcoral;
+    transform: rotate(-3deg);
+}
+div.pie{
+    text-align: center;
+    padding: 8px;
+}
+.skills .box
+{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+.skills .box h4
+{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: 500;
+}
+.skills .box .percent
+{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: #575757;
+}
+.skills .box .percent div
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #51ff00;
+}
+.cuadros{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media (max-width: 600px)
+{
+    .skills .box
+    {
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+.text{
+    padding: 0;
+    text-align: center;
+}
+
+@media (max-width: 600px)
+{
+    .container
+    {
+        grid-template-columns: repeat(1,1fr);
+    }
+   
+}
+@media (max-width: 1024px){
+    div.galeria{
+        width: auto;
+        padding: 2px 16px;
+        }
+    
+}
