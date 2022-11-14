@@ -235,6 +235,10 @@ textarea
     {
         grid-template-columns: repeat(1,1fr);
     }
+    h1
+    {
+        align-items: center;
+    }
     .img-2
     {
       
