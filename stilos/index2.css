@@ -244,7 +244,8 @@ textarea
       
         width: 200px;
         height: 200px;
-        display: block;
+        display: flex;
+        object-fit: scale-down;
         margin: auto;
         border-radius: 25px;
     }
